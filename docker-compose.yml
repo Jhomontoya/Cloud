@@ -1,0 +1,9 @@
+#lamp-minimal/docker-compose.yml
+services:
+  web:
+   build: .
+   container_name: lamp_web
+   ports:
+    -"8080:80" # host:contenedor
+   volumes:
+    -./www:/var/www/html
